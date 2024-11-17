@@ -1,0 +1,50 @@
+📧 Spam Detector App
+
+This project is a Spam Detector that uses machine learning to classify text messages as either spam or ham (not spam). The application is built using Python and integrates with Gradio for a simple and user-friendly web interface.
+
+🚀 Features
+Train & Evaluate Models: Logistic Regression and Linear SVM are used for training and evaluation.
+Text Vectorization: Utilizes CountVectorizer for text feature extraction.
+Persistence: Save and load models and vectorizers with pickle.
+Interactive Web Interface: A Gradio-powered app for easy text classification.
+Example Prediction: Detect spam with a real-world message example.
+
+📊 How It Works
+
+Data Loading:
+
+The spam.csv dataset is loaded and preprocessed.
+
+Feature Extraction:
+
+CountVectorizer is used to convert text into numerical features.
+
+Model Training:
+
+Both Logistic Regression and Linear SVM models are trained on the dataset.
+
+Model Persistence:
+
+The trained SVM model and CountVectorizer are saved using pickle.
+
+Prediction:
+
+Users can input a text message, and the model predicts if it's Spam or Ham.
+
+Web Interface:
+
+A Gradio-powered interface allows real-time testing.
+
+📊 Example Usage
+
+Input: You have won $1000000000! Send your bank information now!
+Output: This message is a : Spam 🚨
+
+🛠️ Dependencies
+
+pandas
+scikit-learn
+gradio
+numpy
+pickle
+os
